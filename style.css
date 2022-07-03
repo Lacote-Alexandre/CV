@@ -98,8 +98,11 @@ html {
     text-decoration: none;
   }
 
-  /* ********************** LANGAGES *********************** */
+  .typed {
+    font-size: 1.5em;
+  }
 
+  /* ********************** LANGAGES *********************** */
   #langages {
     padding: 65px 80px 60px 50px;
     margin: 170px 0 0 6%;
@@ -108,7 +111,7 @@ html {
     height: 600px;
     width: 45%;
     max-width: 640px;
-    background: linear-gradient(to right, #0738FF 0%, #1E80FF 46%, #659EFF 100%);
+    background: linear-gradient(to right, #c3c3ce, #E9E9F7);
     clip-path: polygon(0 5%, 100% 0, 89% 100%, 0 92%);
   }
   #langages .bar {
@@ -126,7 +129,7 @@ html {
   padding: 95px 0 110px 50px;
   width: 45%;
   max-width: 660px;
-  background: linear-gradient(to left, #0738FF 0%, #1E80FF 46%, #659EFF 100%);
+  background: linear-gradient(to left, #c3c3ce, #E9E9F7);
   clip-path: polygon(2% 7%, 100% 10%, 99% 85%, 13% 90%);
 
 }
@@ -185,11 +188,14 @@ html {
 }
 #parcours h6 {
   font-style: italic;
-  color: #1a99c0;
+  font-size: 1.4em;
+  color: #283655;
 }
 #parcours p {
   line-height: 1.9em;
-  text-shadow: 0.2px 0.2px #111;
+  text-shadow: 0.2px 0.2px rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.2em;
   font-family: 'Playfair Display', serif;
 }
 .timeline {
@@ -225,8 +231,8 @@ html {
   padding-right: 0;
 }
 #parcours a {
-  color: #1a99c0;
-  font-size: 1em;
+  color: #052777;
+  font-size: 1.2em;
 }
 
 /* ********************* OTHER *********************** */
@@ -234,15 +240,16 @@ html {
   margin-top: 80px;
   padding: 50px 100px 100px 100px;
   width: 100%;
-  background: radial-gradient(ellipse farthest-corner at center center, #b7b7cb 0%, #7d74d2 40%, #4831b4 80%);
+  background-color: #E9E9F7;
+
   clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 84%);
 }
 #other-skills h3 {
   transform: rotate(-3.2deg);
   font-size: 3em;
   padding-top: 30px;
-  text-shadow: -1px 1px 0px maroon;
-  color: #FFBB00;
+  text-shadow: -1px 1px 0px rgb(87, 85, 85);
+  color: #375E97;
 }
 .cloud {
   text-align: center;
@@ -257,7 +264,7 @@ html {
   padding: 250px 50px 100px 50px;
   margin: -300px 0px -90px 0px;
   clip-path: polygon(0 21%, 100% 31%, 100% 95%, 0% 100%);
-  background: radial-gradient(circle farthest-corner at center center, #d8a84e 0%, #dbea9f 40%, #e2d483 20%);
+  background: radial-gradient(circle farthest-corner at top left, #f1f1f6 0%, #cacad0 20%);
 }
 #hobbies h3 {
   transform: rotate(4.2deg);
@@ -294,7 +301,8 @@ padding-top: 80px;
   text-align: center;
 }
 .flip-box-back {
-  color: white;
+  color: #111;
+  font-size: 1.3em;
   transform: rotateY(180deg);
 }
 .flip-box-front, .flip-box-back {

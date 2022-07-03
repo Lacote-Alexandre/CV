@@ -18,7 +18,7 @@ window.addEventListener('scroll', function(){
 // TYPED
 
 var typed = new Typed('.typed', {
-  strings: ["Après de multiples expériences dans le commerce, j'ai décidé de me réorienter vers le développement Web car ce domaine m’intéresse et me passionne particulièrement. Je recherche un contrat d'alternance d'une année afin de valider mon diplôme de développeur WEB.." , " Mon objectif : " , "Faire rayonner l’entreprise et les individus qui la composent."],
+  strings: ["Après de multiples expériences dans le commerce, j'ai décidé de me réorienter vers le développement Web car ce domaine m’intéresse et me passionne. Je recherche un contrat d'alternance d'une année afin de valider mon diplôme de développeur WEB."],
   typeSpeed: 25,
 });
 
