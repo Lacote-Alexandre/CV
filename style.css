@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Trispace:wght@200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    color: #283655 !important;
+    background-color: #f7faff !important;
+    font-family: 'Rambla', sans-serif;
+  }
+  h2, h3 {
+    font-family: 'Audiowide', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px #283655;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  /************************* HEADER ************************/
+
+  .navbar {
+    background-color: #FAFAFA;
+    opacity: 0.9;
+    height: 42px;
+    transition: 0.7s;
+  }
+  .navbar-nav {
+    width: 80% !important;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  header {
+    text-align: center;
+    height: 100vh;
+    background: url(./media/header.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+  }
+  h1 {
+    padding: 90px 0 10px 0;
+    font-family: 'Trispace', sans-serif;
+    font-size: 4.3em;
+    text-transform: uppercase;
+  }
+  #line {
+    height: 1px;
+    background-color: #b3aca7;
+    width: 25%;
+    margin: 0 auto;
+  }
+  #alternance {
+    margin-top: -55px;
+  }
+  h2 {
+    padding: 20px 0 50px 0;
+    font-family: 'Trispace', sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+  .presentation {
+    height: 240px;
+    margin-top: 20px;
+  }
+  .infos {
+    border: 1px solid #b3aca7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .photo {
+    border: 1px solid #b3aca7;
+    position: relative;
+  }
+  .photo img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    max-width: 170px;
+  }
+  header .button {
+    margin-top: 45px;
+  }
+  header .button a {
+    padding: 20px 80px;
+    border: 1px solid #b3aca7;
+    width: 300px;
+  }
+  header .button:hover a {
+    background: #b3aca7;
+    color: #e2dedb;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+
+  /* ********************** LANGAGES *********************** */
+
+  #langages {
+    padding: 65px 80px 60px 50px;
+    margin: 170px 0 0 6%;
+    margin-left: 5%;
+    line-height: 35px;
+    height: 600px;
+    width: 45%;
+    max-width: 640px;
+    background: linear-gradient(to right, #0738FF 0%, #1E80FF 46%, #659EFF 100%);
+    clip-path: polygon(0 5%, 100% 0, 89% 100%, 0 92%);
+  }
+  #langages .bar {
+    padding: 10px 0 4px 0;
+    letter-spacing: 0.1em;
+  }
+  
+  /* ********************** FORMATION ********************* */
+  
+  #formation {
+  position: relative;
+  top: -640px;
+  float: right;
+  margin-right: 5%;
+  padding: 95px 0 110px 50px;
+  width: 45%;
+  max-width: 660px;
+  background: linear-gradient(to left, #0738FF 0%, #1E80FF 46%, #659EFF 100%);
+  clip-path: polygon(2% 7%, 100% 10%, 99% 85%, 13% 90%);
+
+}
+#autodidacte {
+  padding-top: 20px;
+}
+#fcc {
+  padding: 50px 0 0 9%;
+}
+#occ {
+  padding: 50px 0 0 18%
+}
+#formation h4 {
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  padding-bottom: 10px;
+  color: #005978;
+  text-shadow: -1px -1px 1px #35B4D5;
+}
+.counter {
+  display: flex;
+  text-align: center;
+}
+.data {
+  border: 1px solid #35B4D5;
+  width: 180px;
+  margin: 0 2%;
+  box-shadow: 0 0 8px #1C9DC4;
+  padding: 1px 20px;
+}
+.counter-value {
+  font-size: 2em;
+}
+.data-span {
+  font-size: 1.8em;
+}
+
+/*********************** PARCOURS ****************************/
+
+#parcours {
+  max-width: 800px;
+  margin: 200px auto 180px auto;
+  padding: 40px 30px 100px 30px;
+  background: url(./media/parcours.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: -1px -1px 8px #283655;
+}
+#parcours h3 {
+  font-size: 2.5em;
+  padding-bottom: 30px;
+}
+#parcours h4 {
+  font-size: 1.6em;
+  color: #411ce4;
+}
+#parcours h6 {
+  font-style: italic;
+  color: #1a99c0;
+}
+#parcours p {
+  line-height: 1.9em;
+  text-shadow: 0.2px 0.2px #111;
+  font-family: 'Playfair Display', serif;
+}
+.timeline {
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #ffce65, #ff5507);
+  border-image-slice: 1;
+  margin: 0;
+  padding: 40px;
+  position: relative;
+}
+.timeline:nth-child(1):after {
+  content: '▲';
+  color: #ff5507;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  box-sizing: content-box !important;
+}
+.timeline:nth-child(1) {
+  border-bottom: 3px solid;
+  border-top: none;
+  width: 80%;
+}
+.timeline:nth-child(2) {
+  border-top: none;
+}
+.timeline:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+.timeline:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+#parcours a {
+  color: #1a99c0;
+  font-size: 1em;
+}
+
+/* ********************* OTHER *********************** */
+#other-skills {
+  margin-top: 80px;
+  padding: 50px 100px 100px 100px;
+  width: 100%;
+  background: radial-gradient(ellipse farthest-corner at center center, #b7b7cb 0%, #7d74d2 40%, #4831b4 80%);
+  clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 84%);
+}
+#other-skills h3 {
+  transform: rotate(-3.2deg);
+  font-size: 3em;
+  padding-top: 30px;
+  text-shadow: -1px 1px 0px maroon;
+  color: #FFBB00;
+}
+.cloud {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+/********************* HOBBIES *********************/
+
+#hobbies {
+  padding: 250px 50px 100px 50px;
+  margin: -300px 0px -90px 0px;
+  clip-path: polygon(0 21%, 100% 31%, 100% 95%, 0% 100%);
+  background: radial-gradient(circle farthest-corner at center center, #d8a84e 0%, #dbea9f 40%, #e2d483 20%);
+}
+#hobbies h3 {
+  transform: rotate(4.2deg);
+  font-size: 3em;
+  text-shadow: -1px 1px 0px #375E97;
+}
+.pictures {
+  display: flex;
+  justify-content: center;
+}
+.pictures img {
+  width: 300px;
+  height: 300px;
+}
+.sport {
+padding-top: 80px;
+}
+.voyage {
+  padding-top: 7px;
+  font-size: 0.9em;
+}
+.btc {
+  padding-top: 90px;
+}
+.jeux {
+  padding-top: 60px;
+}
+.flip-box-back div {
+  margin: 0 auto;
+}
+.flip-box-back p {
+  text-transform: uppercase;
+  font-size-adjust: auto;
+  text-align: center;
+}
+.flip-box-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-box {
+  overflow: hidden;
+  background-color: transparent;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/*********************** FOOTER *************************/
+
+footer {
+  background: url(./media/footer.jpg) 50% 0% no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 160px 50px 5 50px;
+}
+footer h3 {
+  padding: 150px 0 60px 0;
+  font-size: 2.5em;
+}
+.footer-icons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+}
+.network {
+  font-size: 4em;
+  border: 1px solid #b3aca7;
+  padding: 30px 45px;
+  color: #726659;
+  z-index: -1 !important;
+  border-radius: 50%;
+}
+.network:hover, textarea:hover, input:hover, .form-button:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+  transition: all 0.3s ease-in-out;
+}
+.form-container {
+  padding-top: 20px;
+}
+#reused_form {
+  position: relative;
+  margin: 50px auto;
+}
+input {
+  font-size: 0.85em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom:none;
+}
+textarea {
+  width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  resize: none !important;
+}
+input::placeholder, textarea::placeholder, input:focus::placeholder, textarea:focus::placeholder {
+  color: #aca49c;
+}
+input:hover::placeholder, textarea:hover::placeholder, input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #e2dedb;
+}
+.form-button {
+  background: transparent;
+  border: solid 1px #b3aca7;
+  padding: 20px 75px;
+  margin: 14px 0 -20px 0;
+}
+.form-container h4 {
+  font-size: 2em;
+}
+#error_message {
+  color: red;
+  border: 1px solid red;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px 15px 8px 15px;
+  box-shadow: 0 0 5px red;
+}
+#success_message {
+  color: green;
+  border: 1px solid green;
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 50px;
+  box-shadow: 0 0 5px green;
+}
+.arrow {
+  margin: -20 auto;
+  padding-top: 15px;
+  animation: arrow linear 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  38% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.arrow a {
+  font-size: 3em;
+  border: none;
+  color: #726659;
+}
+.arrow:hover i {
+  transform: scale(1.6);
+  transition: 0.5s ease-in-out;
+  color: #726659;
+}
+footer p {
+  font-size: 0.9em;
+  letter-spacing: 0.3em;
+}
+
+/*********************** MEDIA QUERIES ************************/
+
+@media screen and (max-width: 900px) {
+  .infos h5, .typed {
+    font-size: 0.9em;
+  }
+  #langages {
+    margin-left: 1%;
+  }
+  #formation {
+    margin-right: 1%;
+  }
+  .network {
+    font-size: 2em;
+    padding: 10x 20px; 
+  }
+}
+@media screen and (max-width: 770px) {
+  .navbar {
+    display: none !important;
+  }
+  .fixed-top {
+    position: unset !important;
+  }
+  h1, h2 {
+    font-size: 2em;
+  }
+  #langages {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #formation {
+    margin: 600px 0 0 10%;
+    width: 80%;
+    float: none;
+    display: block;
+  }
+  .counter-value {
+    font-size: 1em;
+  }
+  .data-span {
+    font-size: .8em;
+  }
+  #parcours {
+    margin-top: -50px
+  }
+  .legende p {
+    display: none;
+  }
+  #other-skills h3, #hobbies h3, footer h3 {
+    font-size: 2em;
+  }
+  .cloud {
+    font-size: 1em;
+  }
+  .flip-box-back p {
+    padding: 10px 0px;
+  }
+  .network {
+    font-size: 1.4em;
+    padding: 14px 20px;
+  }
+  input, textarea {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 520px) {
+  h1 {
+    padding-top: 20px;
+  }
+  h3 {
+    font-size: 1em !important;
+  }
+  #fcc, #occ {
+    padding: 50px 0 0 0;
+  }
+  .projet:nth-child(2), .projet:nth-child(3) {
+    margin-left: 0;
+  }
+  .legende {
+    opacity: 1;
+  }
+  #other-skills {
+    display: none;
+  }
+  #hobbies {
+    margin-top: -30px;
+  }
+  .flip-box-back p {
+    font-size: 0.7em;
+  }
+}
