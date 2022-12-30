@@ -34,7 +34,7 @@ html {
   header {
     text-align: center;
     height: 100vh;
-    background: url(./media/header.jpg) no-repeat fixed 50% 50%;
+    background: url(/media/header.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
   }
   h1 {
@@ -100,18 +100,22 @@ html {
     display: flex;
     margin-top: -20px;
   }
-
-  /* ********************** LANGAGES *********************** */
+  /**************************Lang/Forma***********************/
+  #lf {
+    display: flex;
+    margin-top: 160px;
+    gap: 400px;
+  }
+  /************************ LANGAGES *************************/
   #langages {
     padding: 80px 80px 80px 50px;
-    margin: 170px 0 0 6%;
+    margin: 0 0 0 6%;
     margin-left: 5%;
     line-height: 35px;
     height: 595px;
     width: 45%;
     max-width: 640px;
-    /* background: linear-gradient(to right, #c3c3ce, #E9E9F7); */
-    clip-path: polygon(0 5%, 100% 0, 89% 100%, 0 92%);
+    /* clip-path: polygon(0 5%, 100% 0, 89% 100%, 0 92%); */
   }
   #langages .bar {
     padding: 10px 0 4px 0;
@@ -122,14 +126,12 @@ html {
   
   #formation {
   position: relative;
-  top: -640px;
   float: right;
   margin-right: 5%;
   padding: 95px 0 125px 50px;
   width: 45%;
   max-width: 660px;
-  /* background: linear-gradient(to left, #c3c3ce, #E9E9F7); */
-  clip-path: polygon(2% 7%, 100% 10%, 99% 85%, 13% 90%);
+  /* clip-path: polygon(2% 7%, 100% 10%, 99% 85%, 13% 90%); */
 
 }
 #autodidacte {
@@ -170,12 +172,11 @@ html {
 /*********************** PARCOURS ****************************/
 
 #parcours {
-  max-width: 800px;
-  margin: 200px auto 180px auto;
+  max-width: 900px;
+  margin: 250px auto 180px auto;
   padding: 40px 30px 100px 30px;
-  background: url(./media/parcours2.jpg) no-repeat fixed 50% 50%;
+  background: url(/media/parcours2.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
-
   border-radius: 8px;
   box-shadow: -1px -1px 8px #020202;
 }
@@ -195,7 +196,6 @@ html {
   color: #16284e;
 }
 #parcours p {
-
   line-height: 1.9em;
   text-shadow: 0.2px 0.2px rgb(0, 0, 0);
   font-size: 1.2em;
@@ -205,7 +205,6 @@ html {
   border-top: 3px solid;
   border-image: linear-gradient(to right, #2388a1, #072866ef);
   border-image-slice: 1;
-  margin: 0;
   padding: 40px;
   position: relative;
 }
@@ -220,7 +219,6 @@ html {
 .timeline:nth-child(1) {
   border-bottom: 3px solid;
   border-top: none;
-  width: 80%;
 }
 .timeline:nth-child(2) {
   border-top: none;
@@ -288,7 +286,7 @@ word-spacing: 180px;
   height: 300px;
 }
 .sport {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 .voyage {
   padding-top: 7px;
@@ -338,11 +336,147 @@ word-spacing: 180px;
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
+/****************************************PORTFOLIO********************************/
+#portfolio {
+  margin: 100px 2% 0 2%;
+  padding: 40px 10px 60px 0px;
+  background-color: rgba(179,172,167,0.08);
+  box-shadow: 0px 0px 1px #a8a8a9;
+}
 
+#portfolio h3 {
+  font-size: 3em;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.projet {
+  display: flex;
+  padding-left: 70px;
+}
+
+.projet:nth-child(2) {
+  margin-left: 10%;
+}
+.projet:nth-child(3) {
+  margin-left: 20%;
+}
+
+.cadre {
+  position: relative;
+  padding: 40px 20px 25px 0;
+  width: 60%;
+  max-width: 600px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 10px 8px;
+  color: #aca49c;
+  text-align: center;
+}
+.img-container {
+  height: 250px;
+  width: 90%;
+  max-width: 500px;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 1px 1px 10px #111;
+}
+
+.img-container img {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.img-container:hover img {
+  transform: scale(1.07);
+  transform-origin: 50% 50%;
+  filter: contrast(140%);
+}
+
+.cadre:before, .cadre:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 1px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+  z-index: -1;
+}
+.cadre:before {
+  top: 15px;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.cadre:after {
+  bottom: 0px;
+  right: 15px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.cadre:hover:before, .cadre:hover:after {
+  border-color: #aca49c;
+  width: 100%;
+  height: 100%;
+}
+
+.legende {
+  max-width: 350px;
+  padding: 50px 0 0 20px;
+  opacity: 0;
+  transition: 5s ease-in-out;
+}
+.projet:hover .legende {
+  opacity: 1;
+  transition: 2s ease;
+}
+
+.legende a {
+  padding: 16px 10px 10px 10px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  float: right;
+  border-radius: 3px;
+  background-color: #e2dedb;
+  animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+.legende a:active {
+  animation: shadow-push 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-br {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+    transform: translateX(-8px) translateY(-6px);
+  }
+}
+
+@keyframes shadow-push {
+  0% {
+      box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+      transform: translateX(-8px) translateY(-6px);
+    
+  }
+  100% {
+      box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      transform: translateX(0) translateY(0);
+  }
+}
 /*********************** FOOTER *************************/
 
 footer {
-  background: url(./media/footer.jpg) 50% 0% no-repeat fixed;
+  background: url(/media/footer.jpg) 50% 0% no-repeat fixed;
   background-size: cover;
   text-align: center;
   padding: 160px 50px 5 50px;
