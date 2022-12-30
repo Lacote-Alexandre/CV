@@ -49,9 +49,6 @@ html {
     width: 25%;
     margin: 0 auto;
   }
-  #alternance {
-    margin-top: -55px;
-  }
   h2 {
     padding: 20px 0 50px 0;
     font-family: 'Trispace', sans-serif;
@@ -84,7 +81,7 @@ html {
     max-width: 170px;
   }
   header .button {
-    margin-top: 45px;
+    margin-top: 115px;
   }
   header .button a {
     padding: 20px 80px;
@@ -100,6 +97,8 @@ html {
 
   .typed {
     font-size: 1.5em;
+    display: flex;
+    margin-top: -20px;
   }
 
   /* ********************** LANGAGES *********************** */
@@ -111,7 +110,7 @@ html {
     height: 595px;
     width: 45%;
     max-width: 640px;
-    background: linear-gradient(to right, #c3c3ce, #E9E9F7);
+    /* background: linear-gradient(to right, #c3c3ce, #E9E9F7); */
     clip-path: polygon(0 5%, 100% 0, 89% 100%, 0 92%);
   }
   #langages .bar {
@@ -129,7 +128,7 @@ html {
   padding: 95px 0 125px 50px;
   width: 45%;
   max-width: 660px;
-  background: linear-gradient(to left, #c3c3ce, #E9E9F7);
+  /* background: linear-gradient(to left, #c3c3ce, #E9E9F7); */
   clip-path: polygon(2% 7%, 100% 10%, 99% 85%, 13% 90%);
 
 }
