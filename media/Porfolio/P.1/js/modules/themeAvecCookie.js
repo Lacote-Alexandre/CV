@@ -73,7 +73,6 @@ const theme = {
         } else if(theme.themeValue == "dark") {
             theme.themeValue = "light";
         }
-
         
         // On sauvegarde l'état de notre thème
         //localStorage.setItem("theme", theme.themeValue);

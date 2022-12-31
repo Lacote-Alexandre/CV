@@ -25,7 +25,6 @@ const themeColor = {
     themeColorClick: function(event) {
 
         event.preventDefault();
-       
 
         const buttonElement = event.currentTarget
         const buttonElementId = buttonElement.id

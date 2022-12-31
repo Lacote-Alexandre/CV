@@ -46,8 +46,6 @@ const theme = {
         } else if(theme.themeValue == "dark") {
             theme.themeValue = "light";
         }
-
-        console.log(theme.themeValue);
         
         // On sauvegarde l'état de notre thème
         const infoJsonToSave = JSON.stringify(theme.themeValue);
@@ -69,7 +67,6 @@ const theme = {
 
         // Si lors de la dernière visite j'ai enregistré la valeur dark
         if(themeValueOfLS == "dark") {
-            console.log("j'initialise le theme en dark")
             let body = document.querySelector("body"); 
             body.classList.add(theme.themeDarkCSSClass); 
 

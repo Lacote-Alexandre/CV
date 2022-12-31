@@ -51,7 +51,9 @@ const slider = {
       // nouveau slide courant
       slider.slidesElements[slider.position].classList.add('slider__img--current');
     },
-
+  
+    // La gestion des pastilles (les trois petis points blancs dans le slider)
+    // est un bonus. 
     buildNav: function() {
       const nav = document.createElement('div');
       nav.className = 'slider__nav';
@@ -73,4 +75,5 @@ const slider = {
     }
 };
 
+// j'appelle la fonction init du module slider après chargement du HTML
 document.addEventListener("DOMContentLoaded", slider.init);
