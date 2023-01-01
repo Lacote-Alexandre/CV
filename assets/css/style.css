@@ -618,6 +618,8 @@ footer p {
     width: 80%;
     float: none;
     display: block;
+    visibility: hidden;
+    position: absolute;
   }
   .counter-value {
     font-size: 1em;
@@ -647,6 +649,18 @@ footer p {
   input, textarea {
     width: 300px;
   }
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .img-container img {
+    width: 600px;
+   }
+   #lf {
+    padding-bottom: 130px;
+    margin-top: 60px;
+   }
 }
 @media screen and (max-width: 520px) {
   h1 {
@@ -659,7 +673,8 @@ footer p {
     margin-top: 70px;
   }
   #formation {
-    margin-bottom: -610px;
+  visibility: hidden;
+  position: absolute;
   }
   #fcc, #occ {
     padding: 50px 0 0 0;
@@ -685,4 +700,20 @@ footer p {
   .flip-box-back p {
     font-size: 0.7em;
   }
+ .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .img-container img {
+  width: 400px;
+ }
+ .legende h5 {
+  font-size: 0.75em;
+  font-weight: bold;
+ }
+ .legende a {
+  width: 70px;
+  height: 70px;
+ }
 }
