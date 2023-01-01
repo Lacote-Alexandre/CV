@@ -57,3 +57,9 @@ $(window).scroll(function() {
 //AOS
 
 AOS.init();
+
+/****images - skills */
+$(".image").click(function(){
+  $(".image").removeClass("active");
+  $(this).addClass("active");
+})
