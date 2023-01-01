@@ -35,7 +35,7 @@ html {
   header {
     text-align: center;
     height: 100vh;
-    background: url(/media/header.jpg) no-repeat fixed 50% 50%;
+    background: url(../../media/header.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
   }
   h1 {
@@ -176,7 +176,7 @@ html {
   max-width: 900px;
   margin: 250px auto 180px auto;
   padding: 40px 30px 100px 30px;
-  background: url(/media/parcours2.jpg) no-repeat fixed 50% 50%;
+  background: url(../../media/parcours2.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
   border-radius: 8px;
   box-shadow: -1px -1px 8px #020202;
@@ -462,7 +462,7 @@ justify-content: center;
 /*********************** FOOTER *************************/
 
 footer {
-  background: url(/media/footer.jpg) 50% 0% no-repeat fixed;
+  background: url(../../media/footer.jpg) 50% 0% no-repeat fixed;
   background-size: cover;
   text-align: center;
   padding: 160px 50px 5 50px;
