@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Trispace:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap');
+
 
 html {
     scroll-behavior: smooth;
@@ -105,12 +105,12 @@ html {
   #lf {
     display: flex;
     margin-top: 160px;
-    gap: 400px;
+    gap: 200px;
   }
   /************************ LANGAGES *************************/
   #langages {
     padding: 80px 80px 80px 50px;
-    margin: 0 0 0 6%;
+    margin: 0 0 0 50px;
     margin-left: 5%;
     line-height: 35px;
     height: 595px;
@@ -182,6 +182,7 @@ html {
   box-shadow: -1px -1px 8px #020202;
 }
 #parcours h3 {
+  text-align: center;
   font-size: 2.5em;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -241,7 +242,6 @@ html {
 .skills {
   overflow: hidden;
   height: 100vh;
-  font-family: 'Expletus Sans', cursive;
 }
 .images-skills {
   display: flex;
@@ -289,8 +289,7 @@ html {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  font-family: 'Fredoka One', cursive;
-  
+  font-weight: bold;
 }
 
 .text {
@@ -299,13 +298,12 @@ html {
   justify-content: center;
   align-items: center;
   margin-bottom: -50px;
-
 }
 
 .text h3 {
   text-align: center;
   font-size: 2.2em;
-  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
 }
 
 .sous-text {
